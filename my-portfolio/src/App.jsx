@@ -1,16 +1,18 @@
-import ButtonGradient from "./assets/svg/ButtonGradient";
-import Button from "./components/Button";
-function App() {
+import Header from "./components/Header";
+import ButtonGradient from "./assets/svg/ButtonGradient"
+import '../src/index.css';
+
+
+const App = () => {
   return (
     <>
-      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
       <h1 className="text-3xl font-bold underline">Hello world! </h1>
-        <Button className="mt-10" href="#"></Button>
+      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+        <Header />
       </div>
-
       <ButtonGradient />
     </>
   );
-}
+};
 
 export default App;
